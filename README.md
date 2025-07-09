@@ -3,6 +3,7 @@
 
 Programa de línea de comandos en Java para gestión de clientes y puntos de fidelidad en una cadena de tiendas.
 
+
 ## Requisitos
 - Java 21+
 - Maven 3.8+
@@ -62,7 +63,7 @@ Usé **JaCoCo** ( que mide **Line Coverage** y **Branch Coverage**) para medir l
 
 | **Clase**         | **Instrucciones** | **Branches** |  
 |-------------------|------------------|-------------|
-| `Compra`          | 93%              | 65%         |  
+| `Compra`          | 91%              | 65%         |  
 | `Cliente`         | 88%              | 72%         |  
 | `ClienteService`  | 98%              | 87%         |  
 | `CompraService`   | 93%              | 83%         | 
@@ -109,3 +110,8 @@ MIT License - Ver archivo [LICENSE](LICENSE)
 [INFO]
 [INFO] Tests run: 44, Failures: 0, Errors: 0, Skipped: 0
 ```
+
+## Datos Extra
+### **Nombre**: Sofía Bastías
+
+### **Rol**: 201973041-K
