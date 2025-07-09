@@ -40,7 +40,7 @@ public class Main {
     }
 
     private static void gestionClientes(ClienteService service, Scanner scanner) {
-        // Implementar CRUD de clientes
+        //CRUD de clientes
         System.out.println("\n--- Gestión de Clientes ---");
         System.out.println("1. Agregar Cliente");
         System.out.println("2. Actualizar Cliente");
@@ -67,7 +67,7 @@ public class Main {
                 service.agregarCliente(cliente);
                 break;
             case 2:
-                // Lógica de actualización
+                //actualización id cliente
                 System.out.print("ID del cliente a actualizar: ");
                 String idActualizar = scanner.nextLine();
                 if (!service.existeCliente(idActualizar)) {
@@ -83,7 +83,7 @@ public class Main {
                 System.out.println("Cliente actualizado");
                 break;
             case 3:
-                // Lógica de eliminación
+                // Lógica de eliminación de cliente por id
                 System.out.print("ID del cliente a eliminar: ");
                 String idEliminar = scanner.nextLine();
                 if (service.eliminarCliente(idEliminar)) {
@@ -104,7 +104,7 @@ public class Main {
     private static void registrarCompra(CompraService service, Scanner scanner) {
         System.out.println("\n--- Registrar Compra ---");
 
-        // Obtener ID de cliente
+        //Para sacar ID de cliente
         System.out.print("ID de Cliente: ");
         String idCliente = scanner.nextLine();
 
@@ -114,7 +114,7 @@ public class Main {
             return;
         }
 
-        // Obtener datos de la compra
+        // Sacar datos de la compra
         System.out.print("ID de Compra: ");
         String idCompra = scanner.nextLine();
 
@@ -143,7 +143,7 @@ public class Main {
         procesarCompra(service, idCliente, compra);
     }
 
-    // Métodos auxiliares
+    // Métodos auxiliares requeridos
     private static LocalDate obtenerFechaValida(Scanner scanner) {
         try {
             LocalDate fecha = LocalDate.parse(scanner.nextLine());
@@ -167,6 +167,8 @@ public class Main {
         mostrarResumenCompra(compra, puntos, cliente);
     }
 
+    // Método para mostrar resumen de compra
+
     private static void mostrarResumenCompra(Compra compra, int puntos, Cliente cliente) {
         System.out.println("\n--- Resumen de Compra ---");
         System.out.println("ID Compra: " + compra.getIdCompra());
@@ -177,6 +179,7 @@ public class Main {
         System.out.println("Nivel actual: " + cliente.getNivel());
     }
 
+    // Método para mostrar puntos y nivel del cliente
    private static void mostrarPuntos(ClienteService clienteService, CompraService compraService, Scanner scanner) {
     System.out.println("\n--- Mostrar Puntos/Nivel ---");
     System.out.print("ID de Cliente: ");
@@ -197,7 +200,7 @@ public class Main {
     mostrarResumenCompras(comprasCliente);
     }
 
-// Métodos auxiliares
+// Métodos auxiliares para mostrar información del cliente y resumen de compras
 private static void mostrarInformacionCliente(Cliente cliente) {
     System.out.println("\n--- Información del Cliente ---");
     System.out.println("Nombre: " + cliente.getNombre());

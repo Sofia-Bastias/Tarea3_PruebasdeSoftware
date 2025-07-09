@@ -77,7 +77,7 @@ class ClienteServiceTest {
     }
 
 
-//
+    //test para eliminarCliente
 
     @Test
     void eliminarCliente_clienteExistente_eliminaCorrectamente() {
@@ -149,7 +149,7 @@ class ClienteServiceTest {
     }
 
 
-    //Tests para buscarCliente
+    //Test para buscarCliente
     @Test
     void buscarCliente_conClienteInexistente_lanzaExcepcion() {
         assertThrows(IllegalArgumentException.class, () -> service.buscarCliente("99"));

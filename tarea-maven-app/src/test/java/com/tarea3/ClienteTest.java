@@ -15,6 +15,8 @@ public class ClienteTest {
         Cliente clienteInvalido = new Cliente("2", "Ana", "ana.mail.com", 0, Nivel.BRONCE, 0);
         assertFalse(clienteInvalido.validarCorreo());
     }
+
+    //Tests de setNivel
     @Test
     void setNivel_conNivelValido_actualizaCorrectamente() {
         Cliente cliente = new Cliente("1", "Juan", "juan@mail.com", 0, Nivel.BRONCE, 0);
@@ -28,12 +30,16 @@ public class ClienteTest {
         assertThrows(IllegalArgumentException.class, () -> cliente.setNivel(null));
     }
 
+
+    // Test de setCorreo
+
     @Test
     void setCorreo_conCorreoInvalido_lanzaExcepcion() {
         Cliente cliente = new Cliente("1", "Ana", "ana@test.com", 100, Nivel.BRONCE, 0);
         assertThrows(IllegalArgumentException.class, () -> cliente.setCorreo("correo-invalido"));
     }
 
+    // Test de actualizarStreak
     @Test
     void actualizarStreak_conValorNegativo_lanzaExcepcion() {
         Cliente cliente = new Cliente("1", "Luis", "luis@mail.com", 100, Nivel.BRONCE, 0);

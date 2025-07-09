@@ -2,7 +2,7 @@
 package com.tarea3;
 
 public class Cliente {
-    private final String id;  // Si el ID es inmutable
+    private final String id;  
     private String nombre;
     private String correo;
     private int puntos;
@@ -74,7 +74,7 @@ public class Cliente {
         }
     }
 
-    // Validación de correo (opcional, si ya está en el setter)
+    // Validación de correo
     public boolean validarCorreo() {
         return correo != null && correo.contains("@");
     }
