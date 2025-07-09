@@ -56,6 +56,9 @@ public class Cliente {
     }
 
     public void setStreakDias(int streakDias) {
+        if (streakDias < 0) {
+            throw new IllegalArgumentException("El streak no puede ser negativo");
+        }
         this.streakDias = streakDias;
     }
 

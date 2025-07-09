@@ -27,4 +27,20 @@ public class ClienteTest {
         Cliente cliente = new Cliente("1", "Juan", "juan@mail.com", 0, Nivel.BRONCE, 0);
         assertThrows(IllegalArgumentException.class, () -> cliente.setNivel(null));
     }
+
+    @Test
+    void setCorreo_conCorreoInvalido_lanzaExcepcion() {
+        Cliente cliente = new Cliente("1", "Ana", "ana@test.com", 100, Nivel.BRONCE, 0);
+        assertThrows(IllegalArgumentException.class, () -> cliente.setCorreo("correo-invalido"));
+    }
+
+    @Test
+    void actualizarStreak_conValorNegativo_lanzaExcepcion() {
+        Cliente cliente = new Cliente("1", "Luis", "luis@mail.com", 100, Nivel.BRONCE, 0);
+    
+        Exception exception = assertThrows(IllegalArgumentException.class, 
+            () -> cliente.setStreakDias(-1));
+    
+        assertEquals("El streak no puede ser negativo", exception.getMessage());
+    }
 }
