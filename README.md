@@ -4,9 +4,21 @@
 Programa de línea de comandos en Java para gestión de clientes y puntos de fidelidad en una cadena de tiendas.
 
 ## Requisitos
-- Java 17+
+- Java 21+
 - Maven 3.8+
 - JUnit 5 (incluido en dependencias Maven)
+
+## Build del Proyecto
+
+Este proyecto utiliza **Maven** como sistema de construcción.
+
+### Comandos útiles
+- Compilar: `mvn compile`
+- Ejecutar pruebas: `mvn test`
+- Generar .jar: `mvn package`
+
+
+El archivo `pom.xml` incluye la configuración necesaria para las dependencias (como JUnit 5) y la estructura del proyecto.
 
 ## Cómo ejecutar
 ```bash
@@ -39,11 +51,11 @@ tarea-maven-app/
 ```
 
 ## Cobertura de pruebas
-Usé **JaCoCo** para medir la cobertura porque:
+Usé **JaCoCo** ( que mide **Line Coverage** y **Branch Coverage**) para medir la cobertura porque:
 - Se integra fácilmente con Maven
-- Genera reportes visuales claros
+- Genera reportes visuales claros y simples
 - Es el estándar en proyectos Java
-- Cumple con los requisitos del curso
+- Permiten validar no solo que mi código se ejecuta, sino que también se prueban las diferentes rutas posibles
 
 
 **Cobertura actual:**
@@ -55,6 +67,9 @@ Usé **JaCoCo** para medir la cobertura porque:
 | `ClienteService`  | 98%              | 87%         |  
 | `CompraService`   | 93%              | 83%         | 
 | `Nivel`           | 100%             | -           |  
+
+
+
 
 
 ## Funcionalidades implementadas
