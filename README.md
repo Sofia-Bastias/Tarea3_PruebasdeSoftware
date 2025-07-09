@@ -68,6 +68,9 @@ Usé **JaCoCo** ( que mide **Line Coverage** y **Branch Coverage**) para medir l
 | `CompraService`   | 93%              | 83%         | 
 | `Nivel`           | 100%             | -           |  
 
+**Captura última cobertura registrada**
+
+![Cobertura](docs\cobertura.png)
 
 
 
@@ -94,9 +97,11 @@ Usé **JaCoCo** ( que mide **Line Coverage** y **Branch Coverage**) para medir l
 ## 📝 Licencia
 MIT License - Ver archivo [LICENSE](LICENSE)
 
-## 🔍 Diseño del sistema
-![Diagrama UML simplificado](https://i.imgur.com/fake-uml.png)  
-*(Diagrama de clases básico que muestra relaciones entre Cliente, Compra y Nivel)*
+##  Diseño del sistema
+**Diagrama UML**
+
+![Texto alternativo](docs\DiagramaUML.png)
+
 
 ## Ejemplo de salida de tests (último resultado al probar tarea)
 ```text
