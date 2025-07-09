@@ -71,7 +71,7 @@ Usé **JaCoCo** ( que mide **Line Coverage** y **Branch Coverage**) para medir l
 
 **Captura última cobertura registrada**
 
-![Cobertura](docs\cobertura.png)
+![Cobertura](docs/cobertura.png)
 
 
 
@@ -101,7 +101,7 @@ MIT License - Ver archivo [LICENSE](LICENSE)
 ##  Diseño del sistema
 **Diagrama UML**
 
-![Texto alternativo](docs\DiagramaUML.png)
+![Diagrama](docs/DiagramaUML.png)
 
 
 ## Ejemplo de salida de tests (último resultado al probar tarea)
